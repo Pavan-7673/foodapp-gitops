@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: foodapp-dev
+
+resources:
+  - ../../base
+
+images:
+  - name: pavanreddy8/foodapp-user-service
+    newTag: v1
