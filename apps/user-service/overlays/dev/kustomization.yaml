@@ -4,8 +4,9 @@ kind: Kustomization
 namespace: foodapp-dev
 
 resources:
-  - ../../base
+- ../../base
 
 images:
-  - name: pavanreddy8/foodapp-user-service
-    newTag: v1
+- name: pavanreddy8/foodapp-user-service
+  newName: pavanreddy8/foodapp-user-service
+  newTag: dev-edace36
